@@ -41,5 +41,17 @@ class ViewController: UIViewController {
 
     @IBAction func onSwitchChange(_ sender: UISwitch) {
     }
+  
+    
+    @IBAction func textEditingEnd(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    
+    }
+    
+    @IBAction func onTapGestureRecognized(_ sender: UITapGestureRecognizer) {
+        numberTextField.resignFirstResponder()
+        nameTextField.resignFirstResponder()
+    }
+    
 }
 
