@@ -10,16 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   // Outlets
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var numberTextField: UITextField!
+    
+    @IBOutlet weak var sliderLabel: UILabel!
+    
+    
+ //Inherited Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+// Action Methods
+    
+    @IBAction func onSliderChange(_ sender: UISlider) {
+    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func onSegmentedControlChange(_ sender: UISegmentedControl) {
     }
 
 
+    @IBAction func onDoSomething(_ sender: UIButton) {
+    }
+
+
+    @IBAction func onSwitchChange(_ sender: UISwitch) {
+    }
 }
 
